@@ -5,6 +5,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	kotlin("jvm") version "1.6.0"
 	kotlin("plugin.spring") version "1.6.0"
+	id("org.flywaydb.flyway") version "8.0.1"
 }
 
 group = "com.example"
@@ -36,4 +37,10 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+flyway {
+    url = "jdbc:mysql://localhost:3306/graphql_sample?useSSL=false"
+    user = "root"
+    password = ""
 }
