@@ -1,0 +1,7 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/graphql_sample?useSSL=false
+    username: username
+    password: passsword
+server: # optional
+  port: 9001 # optional デフォルトのポートが8080で立ち上がるので変更したい場合に設定する
