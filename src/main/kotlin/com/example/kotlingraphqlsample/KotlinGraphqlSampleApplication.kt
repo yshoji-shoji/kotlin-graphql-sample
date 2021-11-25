@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class KotlinGraphqlSampleApplication
 
 fun main(args: Array<String>) {
+    @Suppress("SpreadOperator")
     runApplication<KotlinGraphqlSampleApplication>(*args)
 }
